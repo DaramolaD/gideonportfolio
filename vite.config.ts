@@ -12,4 +12,6 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Required for Vercel: outside Lovable, nitro is skipped unless explicitly enabled.
+  nitro: { preset: "vercel" },
 });
